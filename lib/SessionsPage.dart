@@ -22,12 +22,17 @@ class _sessionsPageState extends State<sessionsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      //        App Bar
+
+    appBar: AppBar(
         title: Text('Sessions'),
         backgroundColor: Colors.grey[800],
       ),
       body: Stack(
           children: [
+
+            //        Course Container
+
             Positioned(
               top: 0,
               right: 0,
@@ -69,6 +74,9 @@ class _sessionsPageState extends State<sessionsPage> {
 
               ),
             ),
+
+            //        Sessions Container
+
             Positioned(
               top: 240,
               right: 0,
@@ -106,6 +114,11 @@ class _sessionsPageState extends State<sessionsPage> {
                   ],
                 ),
               ),),
+
+
+            //        Bottom navigation bar Container
+
+
             Positioned(
               bottom: 0,
               left: 0,
@@ -152,6 +165,10 @@ class _sessionsPageState extends State<sessionsPage> {
 
   }
 }
+
+//        Bottom navigation bar class
+
+
 class BNBCustomPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
